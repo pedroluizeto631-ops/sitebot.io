@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Adicionar Bot - Discord</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial;
+        color:white;
+        background: #0d1117;
+        
+        /* Fundo com ícones pequenos estilo Discord */
+        background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968756.png");
+        background-size: 120px;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+
+    .overlay{
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.7);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        flex-direction:column;
+        padding: 40px;
+    }
+
+    .card{
+        background:#111827;
+        padding:30px;
+        border-radius:20px;
+        width: 420px;
+        box-shadow:0 0 20px rgba(0,0,0,.6);
+        border:2px solid #5865F2;
+    }
+
+    .bot-img{
+        width:130px;
+        height:130px;
+        border-radius:50%;
+        border:3px solid #5865F2;
+        object-fit:cover;
+    }
+
+    .icons{
+        font-size:55px;
+        margin:10px;
+    }
+
+    a{
+        color:#58a6ff;
+        font-size:15px;
+        word-break: break-all;
+    }
+
+    .btn{
+        margin-top:15px;
+        padding:12px 18px;
+        background:#5865F2;
+        border:none;
+        border-radius:10px;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#4752C4;
+        transform:scale(1.05);
+    }
+
+</style>
+</head>
+
+<body>
+<div class="overlay">
+    <div class="card">
+        <!-- FOTO DO BOT (Substitua o link se quiser a real) -->
+        <img class="bot-img" src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png">
+
+        <h1>🤖 Bot Dev Assistant</h1>
+        <p>Seu bot inteligente para auxiliar desenvolvedores dentro do Discord 😎💻</p>
+
+        <div class="icons">
+            🤖 💻
+        </div>
+
+        <h3>Link para adicionar o bot:</h3>
+
+        <a href="https://discord.com/oauth2/authorize?client_id=1457174825780117546&permissions=8&integration_type=0&scope=bot">
+            https://discord.com/oauth2/authorize?client_id=1457174825780117546&permissions=8&integration_type=0&scope=bot
+        </a>
+
+        <br>
+
+        <button class="btn" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1457174825780117546&permissions=8&integration_type=0&scope=bot'">
+            Redirecionar para a aplicação do Discord
+        </button>
+    </div>
+</div>
+</body>
+</html>
